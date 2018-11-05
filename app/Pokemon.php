@@ -16,7 +16,6 @@ class Pokemon extends Model
 
     public function users(){
         return $this->belongsToMany('Pokeapp\User');
-        
     }
     public function tipo()
     {
