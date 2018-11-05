@@ -15,12 +15,10 @@ class Pokemon extends Model
     ]; 
 
     public function users(){
-        return $this->belongsToMany('Pokeapp\User');
-        
+        return $this->belongsToMany('Pokeapp\User'); 
     }
     public function tipo()
     {
-        
         return $this->hasOne('Pokeapp\Tipo');
     }
     public function evoluciones(){
