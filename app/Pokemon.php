@@ -20,6 +20,7 @@ class Pokemon extends Model
     }
     public function tipo()
     {
+        
         return $this->hasOne('Pokeapp\Tipo');
     }
     public function evoluciones(){
